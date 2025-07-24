@@ -39,12 +39,7 @@
                         <a href="#about" class="nav-item nav-link">About</a>
                         <a href="#skill" class="nav-item nav-link">Skills</a>
                         <a href="#projects" class="nav-item nav-link">Projects</a>
-                        <!-- <a href="#portfolio" class="nav-item nav-link">Experience</a>
-                        <a href="#price" class="nav-item nav-link">Price</a>
-                        <a href="#review" class="nav-item nav-link">Review</a>
-                        <a href="#team" class="nav-item nav-link">Team</a>
-                        <a href="#blog" class="nav-item nav-link">Blog</a> -->
-                        <a href="#contact" class="nav-item nav-link">Contact</a>
+                        <a href="#footer" class="nav-item nav-link">Contact</a>
                     </div>
                 </div>
             </div>
@@ -65,7 +60,7 @@
                                 <div class="typed-text">Software Developer, Machine Learning Engineer</div>
                             </div>
                             <div class="hero-btn">
-                                <a class="btn" href="#contact">Hire Me</a>
+                                <a class="btn" href="#footer">Hire Me</a>
                             </div>
                         </div>
                     </div>
@@ -172,6 +167,20 @@
                     <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
                         <div class="skill-item">
                             <div class="skill-img">
+                                <img src="img\llms_800x800_40319a0ba7.webp" alt="Skill Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="skill-item">
+                            <div class="skill-img">
+                                <img src="img\images.png" alt="Skill Icon">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 wow fadeInUp" data-wow-delay="0.0s">
+                        <div class="skill-item">
+                            <div class="skill-img">
                                 <img src="img/skills-gh.webp" alt="Skill Icon">
                             </div>
                         </div>
@@ -226,10 +235,21 @@
                     <div class="timeline-item right wow slideInRight" data-wow-delay="0.1s">
                         <div class="timeline-text">
                             <div class="timeline-date"></div>
-                            <h2>Hospital Billing System</h2>
-                            <h4>C, Doubly Linked List - DSA, MySQL</h4>
+                            <h2>HealthCare Prediction</h2>
+                            <h4>Python, Machine Learning, Streamlit</h4>
                             <p>
-                                Developed a Hospital Billing System to display patient record, including treatments and charges, supporting adding, deleting, updating, and displaying billing summaries in the console.                            </p>
+                                Created a ML model for healthcare prediction that preprocesses data, applies machine learning algorithms, and evaluate models to assist healthcare professionals in early diagnosis and decision-making.</p>
+                            </p>
+                            <a href="https://github.com/BharathGunasekaran/Health_Care_Prediction" target="_blank" class="btn">View Project</a>
+                        </div>
+                    </div>
+                    <div class="timeline-item left wow slideInLeft" data-wow-delay="0.1s">
+                        <div class="timeline-text">
+                            <div class="timeline-date"></div>
+                            <h2>Hospital Billing System</h2>
+                            <h4>C, DSA, MySQL</h4>
+                            <p>
+                                Developed a Hospital Billing System to display patient record, including treatments and charges, supporting adding, deleting, updating, and displaying billing summaries in the console.
                             </p>
                             <a href="https://github.com/BharathGunasekaran/Hospital-Billing-System" target="_blank" class="btn">View Project</a>
                         </div>
@@ -239,135 +259,10 @@
         </div>
         <!-- Job Experience End -->
         
-        <!-- Contact Start -->
-        <div class="contact wow fadeInUp" data-wow-delay="0.1s" id="contact">
-            <div id="net"></div>
-            <div class="container-fluid">
-                <div class="container">
-                    <!-- Section Header -->
-                    <div class="section-header text-center">
-                        <h2>Get In Touch</h2>
-                    </div>
-                    <!-- Two-column layout -->
-                    <div class="row align-items-center">
-                        <!-- Left: Image -->
-                        <div class="col-md-5">
-                            <div class="img-text-wrapper">
-                                <img src="img/contact.png" alt="Contact Image">
-                            </div>
-                        </div>
-
-                        <!-- Right: Contact Form -->
-                        <div class="col-md-7">
-                            <div class="contact-form">
-                                <h2>Let's Connect...</h2>
-                                <h5>Interested in collaborating or hiring? Drop a message!</h5>
-                                <form id="contactForm" novalidate="novalidate">
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required data-validation-required-message="Please enter your name" />
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required data-validation-required-message="Please enter your email" />
-                                        <p class="help-block"></p>
-                                    </div>
-                                    <div class="control-group">
-                                        <input type="text" class="form-control" id="subject" name="subject" placeholder="Subject" required data-validation-required-message="Please enter a subject" />
-                                    </div>
-                                    <div class="control-group">
-                                        <textarea class="form-control" id="message" name="message" placeholder="Message" required data-validation-required-message="Please enter your message"></textarea>
-                                    </div>
-                                    <div>
-                                        <button class="btn" type="submit" id="sendMessageButton">Send Message</button>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div> <!-- row end -->
-                </div>
-            </div>
-        </div>
-        <!-- Contact End -->
-
-        <script>
-            document.addEventListener("DOMContentLoaded", () => {
-            const form = document.getElementById("contactForm");
-            const submitButton = document.getElementById("sendMessageButton");
-
-            // Create the loading modal dynamically
-            const loadingModal = document.createElement("div");
-            loadingModal.classList.add("loading-modal");
-            loadingModal.innerHTML = `
-                <div class="loading-modal-content">
-                    <div class="spinner"></div>
-                    <div class="processing-text">Processing your message...</div>
-                </div>
-            `;
-            document.body.appendChild(loadingModal);
-
-            // Create a popup container for messages
-            const popup = document.createElement("div");
-            popup.classList.add("response-popup");
-            document.body.appendChild(popup);
-
-            form.addEventListener("submit", async (e) => {
-                e.preventDefault();
-
-                const formData = new FormData(form);
-                const name = formData.get("name");
-                const email = formData.get("email");
-                const subject = formData.get("subject");
-                const message = formData.get("message");
-
-                // Check for empty fields
-                if (!name || !email || !subject || !message) {
-                    showPopup("Please fill all fields", "orange");
-                    return;
-                }
-
-                // Show loading and disable submit
-                submitButton.disabled = true;
-                loadingModal.style.display = "flex";
-
-                try {
-                    const response = await fetch("http://127.0.0.1:3000/contact", {
-                        method: "POST",
-                        headers: { "Content-Type": "application/json" },
-                        body: JSON.stringify({ name, email, subject, message }),
-                    });
-
-                    const text = await response.text();
-                    showPopup(text, response.ok ? "green" : "red");
-
-                    if (response.ok) form.reset();
-                } catch (error) {
-                    showPopup("Something went wrong. Try again.", "red");
-                } finally {
-                    loadingModal.style.display = "none";
-                    submitButton.disabled = false;
-                }
-            });
-
-            function showPopup(message, color) {
-                popup.textContent = message;
-                popup.style.borderColor = color;
-                popup.style.color = color;
-                popup.style.opacity = "1";
-                popup.style.display = "block";
-
-                setTimeout(() => {
-                    popup.style.opacity = "0";
-                    setTimeout(() => {
-                        popup.style.display = "none";
-                    }, 500);
-                }, 2000);
-            }
-        });
-
-        </script>
 
         
         <!-- Footer Start -->
-        <div class="footer wow fadeIn" data-wow-delay="0.3s">
+        <div class="footer wow fadeIn" data-wow-delay="0.3s" id="footer">
             <div class="container-fluid">
                 <div class="container">
                     <div class="footer-info">
@@ -421,7 +316,7 @@
         </div>
 
         
-        <!-- JavaScript Libraries -->
+         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
         <script src="lib/easing/easing.min.js"></script>
@@ -434,9 +329,6 @@
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
-
-
-            
           
     </body>
 </html>
